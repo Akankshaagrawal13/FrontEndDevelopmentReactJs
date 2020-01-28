@@ -17,13 +17,14 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "3.3.0",
     "reactstrap": "^5.0.0",
-    "redux": "^4.0.5"
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://akankshareactapp.ml"
   },
   "eslintConfig": {
     "extends": "react-app"
